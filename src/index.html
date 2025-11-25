@@ -4,12 +4,80 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="/styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Karina - APP</title>
+    <title>DBKarina</title>
     <script type="module" src="/main.ts" defer></script>
   </head>
   <body>
-    <main class="container">
-      
-    </main>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="assets/img/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top" />
+          DBKarina
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="btn-group" role="group" aria-label="Buttons Group">
+            <button type="button" class="btn btn-light" style="width: 80px;">
+              <img src="img/file.png" alt="Nuevo"  width="32px" />
+              Nuevo
+            </button>
+            <button type="button" class="btn btn-light" style="width: 80px;">
+              <img src="img/folder.png" alt="Abrir"  width="32px" />
+              Abrir
+            </button>
+            <button type="button" class="btn btn-light" style="width: 80px;">
+              <img src="img/disk.png" alt="Guardar"  width="32px" />
+              Guardar
+            </button>
+            <button type="button" class="btn btn-light" style="width: 80px;">
+              <img src="img/import.png" alt="Importar"  width="32px" />
+              Importar
+            </button>
+            <button type="button" class="btn btn-light" style="width: 80px;">
+              <img src="img/file-excel.png" alt="Exportar"  width="32px" />
+              Exportar
+            </button>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="btn-group" role="group" aria-label="Buttons Group">
+            <button type="button" class="btn btn-light" style="width: 80px;">
+              <img src="img/cog.png" alt="Configuración"  width="32px" />
+              Config.
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container p-1 width-auto height-auto">
+      <div class="card text-start" id="menu-icons">
+        <div class="card-body">
+          <div class="row mb-3">
+            <div class="col">
+              <input type="text" class="form-control" id="searchInput" placeholder="Buscar..." />
+            </div>
+            <div class="col-auto">
+              <button class="btn btn-light" id="searchButton">
+                <img src="img/search.png" alt="Buscar" width="28px" style="vertical-align: middle;" />
+                Buscar
+              </button>
+            </div>
+          </div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Campos</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Para iniciar haga click en el boton importar y selecciones su archivo xls, xlsx, cvs</td>
+              </tr>
+          </table>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
